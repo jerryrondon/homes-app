@@ -3,7 +3,14 @@ import { Component } from '@angular/core';
 @Component({
   standalone: true,
   selector: 'app-root',
-  template: `<h1>Hello Universe!</h1>`,
+  template: `
+    <main>
+      <header class="brand-name">
+        <img src="/assets/logo.svg" class="brand-logo"
+        alt="logo" aria-hidden="true">
+      </header>
+    </main>
+  `,
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
