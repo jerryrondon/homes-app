@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HomeComponent } from './home/home.component';
 
 @Component({
   standalone: true,
@@ -9,9 +10,13 @@ import { Component } from '@angular/core';
         <img src="/assets/logo.svg" class="brand-logo"
         alt="logo" aria-hidden="true">
       </header>
+      <section>
+        <app-home></app-home>
+      </section>
     </main>
   `,
   styleUrls: ['./app.component.css'],
+  imports: [HomeComponent]
 })
 export class AppComponent {
   title = 'homes';
